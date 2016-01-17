@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/lamosty/exercise-bike-ui#readme",
   "dependencies": {
+    "python-shell": "^0.3.0",
     "socket.io": "^1.4.4"
   }
 }
