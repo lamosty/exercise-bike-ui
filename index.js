@@ -11,7 +11,7 @@ let options = {
 	pythonOptions: ['-u'] // don't buffer the output of print
 };
 
-let pulsesToDataShell = new PythonShell('pulses_to_data.py', options)
+let pulsesToDataShell = new PythonShell('pulses_to_data.py', options);
 
 pulsesToDataShell.on('message', (message) => {
 	console.log(message);
