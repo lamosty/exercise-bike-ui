@@ -8,25 +8,23 @@ let PythonShell = require('python-shell');
 
 let options = {
 	mode: 'json',
-	pythonOptions: ['-u']
+	pythonOptions: ['-u'] // don't buffer the output of print
 };
 
-let pulsesToDataShell = PythonShell.run('pulses_to_data.py', options, (err) => {
-	if (err) {
-		throw err;
-	}
-});
+let pulsesToDataShell = new PythonShell('pulses_to_data.py', options)
 
 pulsesToDataShell.on('message', (message) => {
 	console.log(message);
 });
 
 pulsesToDataShell.end((err) => {
-	if (err) {
-		console.log(err);
-	}
-
-	console.log('finished');
 });
+
+setTimeout(() => {
+
+	pulsesToDataShell.childProcess.kill()
+
+}, 5000);
+
 
 
