@@ -1,0 +1,27 @@
+{
+  "name": "exercise-bike-ui",
+  "version": "1.0.0",
+  "description": "UI for stationary (excercise) bicycles. Just connect the bike to your microphone slot, run this app and you'll be able to monitor your bicycling digitally.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lamosty/exercise-bike-ui.git"
+  },
+  "keywords": [
+    "stationary",
+    "bike",
+    "exercise",
+    "bike",
+    "react",
+    "ui"
+  ],
+  "author": "Rastislav Lamos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lamosty/exercise-bike-ui/issues"
+  },
+  "homepage": "https://github.com/lamosty/exercise-bike-ui#readme"
+}
